@@ -1,0 +1,28 @@
+{
+  "name": "tokyo-glow",
+  "displayName": "tokyo-glow",
+  "description": "Tokyo Night custom",
+  "version": "0.1.0",
+  "publisher": "paodev",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "keywords": [
+    "theme",
+    "dark theme",
+    "tokyo glow",
+    "glow"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Tokyo Glow",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Tokyo Glow-color-theme.json"
+      }
+    ]
+  }
+}
