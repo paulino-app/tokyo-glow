@@ -144,6 +144,7 @@
     "editorBracketPairGuide.activeBackground6": "#c49a5a",
 
     "selection.background": "#515c7e40",
+    // "editor.background": "#1a1b26",
     "editor.background": "#1a1b26",
     "editor.foreground": "#a9b1d6",
     "editor.foldBackground": "#1111174a",
@@ -416,6 +417,56 @@
     "menu.border": "#101014"
   },
   "tokenColors": [
+    // tailwind!
+    // 1) Make the entire string have foreground & black background
+    {
+      "scope": ["string.quoted", "string.template"],
+      "settings": {
+        "foreground": "#8cdbc7" // regular
+        // "background": "#000000" // black background for the string
+      }
+    },
+
+    // 2) Left side of dash => Blue
+    {
+      "scope": "entity.leftword.insideString",
+      "settings": {
+        "foreground": "#0db9d7"
+      }
+    },
+
+    // 3) The dash
+    {
+      "scope": "punctuation.dash.insideString",
+      "settings": {
+        "foreground": "#5F667F"
+      }
+    },
+
+    // 4) Right side if numeric => Pink
+    {
+      "scope": "entity.rightword.number.insideString",
+      "settings": {
+        "foreground": "#ff64c1"
+      }
+    },
+
+    // 5) Right side if not numeric => Teal
+    {
+      "scope": "entity.rightword.insideString",
+      "settings": {
+        "foreground": "#8cdbc7"
+      }
+    },
+
+    // 6) "Modifier" => Pink
+    {
+      "scope": "entity.modifier.insideString",
+      "settings": {
+        "foreground": "#ff64c1" // or any pink you like
+      }
+    },
+    // end tailwind!
     {
       "name": "Italics - Comments, Storage, Keyword Flow, Vue attributes, Decorators",
       "scope": [

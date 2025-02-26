@@ -1,0 +1,25 @@
+
+{
+  "name": "Dash in string injection",
+  "scopeName": "dash-in-string.injection",
+  "injectionSelector": "L:source.js string, L:source.jsx string, L:source.ts string, L:source.tsx string",
+
+  "patterns": [
+    {
+      "match": "(?<=\\s|['\":])(\\b\\w+\\b)(-)(\\b\\d+\\b)",
+      "captures": {
+        "1": { "name": "entity.leftword.insideString" },
+        "2": { "name": "punctuation.dash.insideString" },
+        "3": { "name": "entity.rightword.number.insideString" }
+      }
+    },
+    {
+      "match": "(?<=\\s|['\":])(\\b\\w+\\b)(-)(\\b\\w+\\b|\\[.*?\\])",
+      "captures": {
+        "1": { "name": "entity.leftword.insideString" },
+        "2": { "name": "punctuation.dash.insideString" },
+        "3": { "name": "entity.rightword.insideString" }
+      }
+    }
+  ]
+}

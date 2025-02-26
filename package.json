@@ -7,6 +7,7 @@
   "engines": {
     "vscode": "^1.84.0"
   },
+  "icon": "./assets/logo.png",
   "keywords": [
     "theme",
     "dark theme",
@@ -22,6 +23,18 @@
         "label": "Tokyo Glow",
         "uiTheme": "vs-dark",
         "path": "./themes/Tokyo Glow-color-theme.json"
+      }
+    ],
+    "grammars": [
+      {
+        "path": "./syntaxes/dash-in-string.tmLanguage.json",
+        "scopeName": "dash-in-string.injection",
+        "injectTo": [
+          "source.js",
+          "source.jsx",
+          "source.ts",
+          "source.tsx"
+        ]
       }
     ]
   }

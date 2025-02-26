@@ -1,0 +1,10 @@
+{
+  "name": "My Custom Theme",
+  "type": "dark",
+  "colors": {
+    // Editor UI colors (background, etc.)
+  },
+  "tokenColors": [
+    // 1) Make all strings black
+  ]
+}
